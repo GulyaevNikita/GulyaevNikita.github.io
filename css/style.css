@@ -130,6 +130,7 @@ body {
 
 .header__list {
   align-self: center;
+  transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .header__list-item {
@@ -162,8 +163,8 @@ body {
 
 .form-search {
   position: absolute;
-  display: none;
-  right: -2px;
+  opacity: 0;
+  right: -5px;
   top: 10%;
   max-width: 539px;
   height: 60px;
@@ -171,11 +172,17 @@ body {
   background: #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
   border-radius: 16px;
-  transition: transform 0.2s ease-in-out;
+  visibility: hidden;
+  transform: translateY(-200%);
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .form-search--active {
   display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .search-button {
@@ -194,10 +201,9 @@ body {
 }
 
 .search-button::-webkit-search-cancel-button {
-  display: none;
-}
-
-.search-icon {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
 }
 
 .search-icon--active {
@@ -288,7 +294,7 @@ body {
 
 .container__preview {
   position: relative;
-  padding: 100px 0 100px 80px;
+  padding: 100px 0 90px 80px;
 }
 
 .title-preview {
@@ -369,7 +375,7 @@ body {
 
 .description-cart__left {
   max-width: 868px;
-  padding-top: 426px;
+  align-items: flex-end;
   background-image: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 0%,
@@ -682,7 +688,6 @@ body {
   display: flex;
   width: 100%;
   padding: 30px 0;
-  justify-content: space-between;
   border: none;
   align-items: center;
   border-top: 1px solid #cacaca;
@@ -697,6 +702,12 @@ body {
 
 .questions__list-item:focus-visible {
   outline: none;
+}
+
+.questions__button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .questions__button:hover,
@@ -952,6 +963,7 @@ textarea:active {
 
 .submit {
   margin: 0;
+  margin-bottom: 20px;
   margin-right: 22px;
   padding: 19px 56px;
   border: none;
@@ -1039,6 +1051,7 @@ textarea:active {
   height: 3px;
   background-color: #333333;
   transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
 }
 
 .burger:focus {
