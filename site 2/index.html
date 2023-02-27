@@ -36,9 +36,9 @@
             tabindex="0"
             aria-label="Открыть меню"
           >
-            <div class="burger-menu__line"></div>
-            <div class="burger-menu__line"></div>
-            <div class="burger-menu__line"></div>
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
           </button>
           <div class="header__logo-block">
             <a href="#">
@@ -124,13 +124,12 @@
             </svg>
             <span
               class="header__translation-mobile-text"
-              tabindex="0"
               aria-label="Что в эфире Открыть"
               >Что в эфире?</span
             >
           </button>
           <div class="header__block-translation-mobile flex">
-            <button
+            <div
               class="translation-item button button--ether translation-mobile js-play"
             >
               <span class="button__pause pause-mobile">
@@ -152,8 +151,8 @@
                 >
                 <span class="header__ether-text">«Музыка»</span>
               </div>
-            </button>
-            <button
+            </div>
+            <div
               class="translation-item button button--ether translation-mobile js-play"
             >
               <span class="button__pause">
@@ -176,7 +175,7 @@
                 >
                 <span class="header__ether-text">«Как так?»</span>
               </div>
-            </button>
+            </div>
           </div>
           <nav class="header__nav-down nav flex">
             <ul class="nav__list nav__list-down list-reset flex">
@@ -213,7 +212,7 @@
             </ul>
           </nav>
           <div class="header__block-translation flex">
-            <button class="translation-item button button--ether js-play">
+            <div class="translation-item button button--ether js-play">
               <span class="button__pause">
                 <svg
                   width="12"
@@ -233,9 +232,9 @@
                 >
                 <span class="header__ether-text">«Музыка»</span>
               </div>
-            </button>
+            </div>
 
-            <button class="translation-item button button--ether js-play">
+            <div class="translation-item button button--ether js-play">
               <span class="button__pause">
                 <svg
                   width="12"
@@ -256,7 +255,7 @@
                 >
                 <span class="header__ether-text">«Как так?»</span>
               </div>
-            </button>
+            </div>
           </div>
           <aside class="minimal-age"></aside>
         </div>
@@ -297,12 +296,12 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="14-07">14 июня</time></div>
+              <div class="date"><time datetime="07-14">14 июня</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
                     <p class="time">
-                      <time datetime="T15:43">15:43</time>
+                      <time datetime="15:43">15:43</time>
                     </p>
                     <h3 class="podcast__descr-title">Европа. XIX век</h3>
                     <p class="podcast__descr-subtitle">Дмитрий Гутенберг</p>
@@ -423,7 +422,7 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="T11-06">11 июня</time></div>
+              <div class="date"><time datetime="06-11">11 июня</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
@@ -539,8 +538,8 @@
             <li class="podcast__list-item flex">
               <picture>
                 <source
-                  srcset="img/human-mobile.jpg, img/human-mobile.jpg2x"
-                  media="(max-width: 570px"
+                  srcset="img/human-mobile.jpg"
+                  media="(max-width: 570px)"
                 />
                 <img
                   class="podcast__img"
@@ -548,11 +547,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="08-06">8 июня</time></div>
+              <div class="date"><time datetime="06-08">8 июня</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T08:54">8:54</time></p>
+                    <p class="time"><time datetime="08:54">8:54</time></p>
                     <h3 class="podcast__descr-title">Люди сегодня</h3>
                     <p class="podcast__descr-subtitle">Анна Васильева</p>
                   </div>
@@ -664,8 +663,8 @@
             <li class="podcast__list-item flex">
               <picture>
                 <source
-                  srcset="img/afrika-mobile.jpg, img/afrika-mobile.jpg 2x"
-                  media="(max-width: 570px"
+                  srcset="img/afrika-mobile.jpg"
+                  media="(max-width: 570px)"
                 />
                 <img
                   class="podcast__img"
@@ -673,11 +672,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="05-06">5 июня</time></div>
+              <div class="date"><time datetime="06-05">5 июня</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T09:04">9:04</time></p>
+                    <p class="time"><time datetime="09:04">9:04</time></p>
                     <h3 class="podcast__descr-title">Хэллоу, Африка!</h3>
                     <p class="podcast__descr-subtitle">Пётр Дмитриевский</p>
                   </div>
@@ -793,11 +792,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="02-06">2 июня</time></div>
+              <div class="date"><time datetime="06-02">2 июня</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T07:03">7:03</time></p>
+                    <p class="time"><time datetime="07:03">7:03</time></p>
                     <h3 class="podcast__descr-title">Обо всём</h3>
                     <p class="podcast__descr-subtitle">Пётр Дмитриевский</p>
                   </div>
@@ -913,11 +912,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="28-05">28 мая</time></div>
+              <div class="date"><time datetime="05-28">28 мая</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T09:15">9:15</time></p>
+                    <p class="time"><time datetime="09:15">9:15</time></p>
                     <h3 class="podcast__descr-title">Физика цвета</h3>
                     <p class="podcast__descr-subtitle">Татьяна Флеганова</p>
                   </div>
@@ -1034,11 +1033,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="22-05">22 мая</time></div>
+              <div class="date"><time datetime="05-22">22 мая</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T16:04">16:04</time></p>
+                    <p class="time"><time datetime="16:04">16:04</time></p>
                     <h3 class="podcast__descr-title">Источник звука</h3>
                     <p class="podcast__descr-subtitle">Дмитрий Гутенберг</p>
                   </div>
@@ -1155,11 +1154,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="18-05"> 18 мая</time></div>
+              <div class="date"><time datetime="05-18"> 18 мая</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T06:55">6:55</time></p>
+                    <p class="time"><time datetime="06:55">6:55</time></p>
                     <h3 class="podcast__descr-title">Правила этикета</h3>
                     <p class="podcast__descr-subtitle">Татьяна Флеганова</p>
                   </div>
@@ -1275,7 +1274,7 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="14-06"></time>14 июня</div>
+              <div class="date"><time datetime="06-14"></time>14 июня</div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
@@ -1395,11 +1394,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="11-06">11 июня</time></div>
+              <div class="date"><time datetime="06-11">11 июня</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T05:32">5:32</time></p>
+                    <p class="time"><time datetime="05:32">5:32</time></p>
                     <h3 class="podcast__descr-title">О музыке</h3>
                     <p class="podcast__descr-subtitle">Дмитрий Гутенберг</p>
                   </div>
@@ -1516,11 +1515,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="08-06">8 июня</time></div>
+              <div class="date"><time datetime="06-08">8 июня</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T08:54">8:54</time></p>
+                    <p class="time"><time datetime="08:54">8:54</time></p>
                     <h3 class="podcast__descr-title">Люди сегодня</h3>
                     <p class="podcast__descr-subtitle">Анна Васильева</p>
                   </div>
@@ -1636,11 +1635,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="05-06"></time>5 июня</div>
+              <div class="date"><time datetime="06-05"></time>5 июня</div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T09:04">9:04</time></p>
+                    <p class="time"><time datetime="09:04">9:04</time></p>
                     <h3 class="podcast__descr-title">Хэллоу, Африка!</h3>
                     <p class="podcast__descr-subtitle">Пётр Дмитриевский</p>
                   </div>
@@ -1756,11 +1755,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="02-06">2 июня</time></div>
+              <div class="date"><time datetime="06-02">2 июня</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T07:03">7:03</time></p>
+                    <p class="time"><time datetime="07:03">7:03</time></p>
                     <h3 class="podcast__descr-title">Обо всём</h3>
                     <p class="podcast__descr-subtitle">Пётр Дмитриевский</p>
                   </div>
@@ -1876,11 +1875,11 @@
                   alt="podcast-image"
                 />
               </picture>
-              <div class="date"><time datetime="28-08">28 мая</time></div>
+              <div class="date"><time datetime="08-28">28 мая</time></div>
               <div class="podcast__descr-content">
                 <div class="podcast__descr flex">
                   <div class="info">
-                    <p class="time"><time datetime="T09:15">9:15</time></p>
+                    <p class="time"><time datetime="09:15">9:15</time></p>
                     <h3 class="podcast__descr-title">Физика цвета</h3>
                     <p class="podcast__descr-subtitle">Татьяна Флеганова</p>
                   </div>
@@ -2030,20 +2029,16 @@
           </div>
           <ul class="broadcast__list list-reset grid">
             <li class="broadcast__list-item">
-              <img
-                class="broadcast__img"
-                src="img/human-book.jpg"
-                alt="broadcast-image"
-              />
-              <div class="broadcast__descr">
-                <h3 class="broadcast__descr-title">О людях и книгах</h3>
-                <p class="broadcast__descr-comment">Анонсируется отдельно</p>
-                <div class="broadcast__descr-link">
-                  <a
-                    href="#"
-                    class="broadcast__link link-reset"
-                    tabindex="0"
-                    aria-label="Подробнее"
+              <a href="" class="broadcast__list-item-link link-reset">
+                <img
+                  class="broadcast__img"
+                  src="img/human-book.jpg"
+                  alt="broadcast-image"
+                />
+                <div class="broadcast__descr">
+                  <h3 class="broadcast__descr-title">О людях и книгах</h3>
+                  <p class="broadcast__descr-comment">Анонсируется отдельно</p>
+                  <span class="broadcast__link" aria-label="Подробнее"
                     >Подробнее
                     <svg
                       class="broadcast__link-arow"
@@ -2057,26 +2052,54 @@
                         d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
                       />
                     </svg>
-                  </a>
+                  </span>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="broadcast__list-item">
-              <img
-                class="broadcast__img"
-                src="img/graphomania.jpg"
-                alt="broadcast-image"
-              />
-              <div class="broadcast__descr">
-                <h3 class="broadcast__descr-title">Графомания td</h3>
-                <p class="broadcast__descr-comment">
-                  По понедельникам в <time datetime="10:00">10:00</time>
-                </p>
-                <label class="broadcast__descr-link">
-                  <a
-                    href="#"
+              <a href="" class="broadcast__list-item-link link-reset">
+                <img
+                  class="broadcast__img"
+                  src="img/graphomania.jpg"
+                  alt="broadcast-image"
+                />
+                <div class="broadcast__descr">
+                  <h3 class="broadcast__descr-title">Графомания td</h3>
+                  <p class="broadcast__descr-comment">
+                    По понедельникам в <time datetime="10:00">10:00</time>
+                  </p>
+                  <span class="broadcast__link" aria-label="Подробнее"
+                    >Подробнее
+                    <svg
+                      class="broadcast__link-arow"
+                      width="28"
+                      height="12"
+                      viewBox="0 0 28 12"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="broadcast__list-item">
+              <a href="" class="broadcast__list-item-link link-reset">
+                <img
+                  class="broadcast__img"
+                  src="img/rome.jpg"
+                  alt="broadcast-image"
+                />
+                <div class="broadcast__descr">
+                  <h3 class="broadcast__descr-title">Не Рим, не Троя</h3>
+                  <p class="broadcast__descr-comment">
+                    По вторникам в <time datetime="12:00">12:00</time>
+                  </p>
+                  <span
                     class="broadcast__link link-reset"
-                    tabindex="0"
                     aria-label="Подробнее"
                     >Подробнее
                     <svg
@@ -2091,26 +2114,24 @@
                         d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
                       />
                     </svg>
-                  </a>
-                </label>
-              </div>
+                  </span>
+                </div>
+              </a>
             </li>
             <li class="broadcast__list-item">
-              <img
-                class="broadcast__img"
-                src="img/rome.jpg"
-                alt="broadcast-image"
-              />
-              <div class="broadcast__descr">
-                <h3 class="broadcast__descr-title">Не Рим, не Троя</h3>
-                <p class="broadcast__descr-comment">
-                  По вторникам в <time datetime="T12:00">12:00</time>
-                </p>
-                <label class="broadcast__descr-link">
-                  <a
-                    href="#"
+              <a href="" class="broadcast__list-item-link link-reset">
+                <img
+                  class="broadcast__img"
+                  src="img/egghead.jpg"
+                  alt="broadcast-image"
+                />
+                <div class="broadcast__descr">
+                  <h3 class="broadcast__descr-title">Эрудит</h3>
+                  <p class="broadcast__descr-comment">
+                    По пятницам в <time datetime="17:00">17:00</time>
+                  </p>
+                  <span
                     class="broadcast__link link-reset"
-                    tabindex="0"
                     aria-label="Подробнее"
                     >Подробнее
                     <svg
@@ -2125,26 +2146,24 @@
                         d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
                       />
                     </svg>
-                  </a>
-                </label>
-              </div>
+                  </span>
+                </div>
+              </a>
             </li>
             <li class="broadcast__list-item">
-              <img
-                class="broadcast__img"
-                src="img/egghead.jpg"
-                alt="broadcast-image"
-              />
-              <div class="broadcast__descr">
-                <h3 class="broadcast__descr-title">Эрудит</h3>
-                <p class="broadcast__descr-comment">
-                  По пятницам в <time datetime="T17:00">17:00</time>
-                </p>
-                <label class="broadcast__descr-link">
-                  <a
-                    href="#"
+              <a href="" class="broadcast__list-item-link link-reset">
+                <img
+                  class="broadcast__img"
+                  src="img/epoch.jpg"
+                  alt="broadcast-image"
+                />
+                <div class="broadcast__descr">
+                  <h3 class="broadcast__descr-title">Тонкости эпох</h3>
+                  <p class="broadcast__descr-comment">
+                    По субботам в <time datetime="10:00">10:00</time>
+                  </p>
+                  <span
                     class="broadcast__link link-reset"
-                    tabindex="0"
                     aria-label="Подробнее"
                     >Подробнее
                     <svg
@@ -2159,26 +2178,24 @@
                         d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
                       />
                     </svg>
-                  </a>
-                </label>
-              </div>
+                  </span>
+                </div>
+              </a>
             </li>
             <li class="broadcast__list-item">
-              <img
-                class="broadcast__img"
-                src="img/epoch.jpg"
-                alt="broadcast-image"
-              />
-              <div class="broadcast__descr">
-                <h3 class="broadcast__descr-title">Тонкости эпох</h3>
-                <p class="broadcast__descr-comment">
-                  По субботам в <time datetime="T10:00">10:00</time>
-                </p>
-                <label class="broadcast__descr-link">
-                  <a
-                    href="#"
+              <a href="" class="broadcast__list-item-link link-reset">
+                <img
+                  class="broadcast__img"
+                  src="img/live-idea.jpg"
+                  alt="broadcast-image"
+                />
+                <div class="broadcast__descr">
+                  <h3 class="broadcast__descr-title">Живые мысли</h3>
+                  <p class="broadcast__descr-comment">
+                    По воскресеньям в <time datetime="15:30"></time>15:30
+                  </p>
+                  <span
                     class="broadcast__link link-reset"
-                    tabindex="0"
                     aria-label="Подробнее"
                     >Подробнее
                     <svg
@@ -2193,43 +2210,9 @@
                         d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
                       />
                     </svg>
-                  </a>
-                </label>
-              </div>
-            </li>
-            <li class="broadcast__list-item">
-              <img
-                class="broadcast__img"
-                src="img/live-idea.jpg"
-                alt="broadcast-image"
-              />
-              <div class="broadcast__descr">
-                <h3 class="broadcast__descr-title">Живые мысли</h3>
-                <p class="broadcast__descr-comment">
-                  По воскресеньям в <time datetime="15:30"></time>15:30
-                </p>
-                <label class="broadcast__descr-link">
-                  <a
-                    href="#"
-                    class="broadcast__link link-reset"
-                    tabindex="0"
-                    aria-label="Подробнее"
-                    >Подробнее
-                    <svg
-                      class="broadcast__link-arow"
-                      width="28"
-                      height="12"
-                      viewBox="0 0 28 12"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
-                      />
-                    </svg>
-                  </a>
-                </label>
-              </div>
+                  </span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -3249,12 +3232,7 @@
             <h2 class="playlist__title title">Плейлисты</h2>
             <p class="playlist__subtitle">Жанр</p>
             <div class="playlist__checkbox">
-              <label
-                for="input1"
-                class="playlist__label"
-                tabindex="0"
-                type="button"
-              >
+              <label for="input1" class="playlist__label" tabindex="0">
                 <input
                   class="play-check"
                   id="input1"
@@ -3265,12 +3243,7 @@
                 Постпанк
                 <span class="check-icon"></span>
               </label>
-              <label
-                for="input2"
-                class="playlist__label"
-                tabindex="0"
-                type="button"
-              >
+              <label for="input2" class="playlist__label" tabindex="0">
                 <input
                   class="play-check"
                   id="input2"
@@ -3281,12 +3254,7 @@
                 Хардкор
                 <span class="check-icon"></span>
               </label>
-              <label
-                for="input3"
-                class="playlist__label"
-                tabindex="0"
-                type="button"
-              >
+              <label for="input3" class="playlist__label" tabindex="0">
                 <input
                   class="play-check"
                   id="input3"
@@ -3297,12 +3265,7 @@
                 Панк-рок
                 <span class="check-icon"></span>
               </label>
-              <label
-                for="input4"
-                class="playlist__label"
-                tabindex="0"
-                type="button"
-              >
+              <label for="input4" class="playlist__label" tabindex="0">
                 <input
                   class="play-check"
                   id="input4"
@@ -3313,12 +3276,7 @@
                 Рок
                 <span class="check-icon"></span>
               </label>
-              <label
-                for="input5"
-                class="playlist__label"
-                tabindex="0"
-                type="button"
-              >
+              <label for="input5" class="playlist__label" tabindex="0">
                 <input
                   class="play-check"
                   id="input5"
@@ -3329,12 +3287,7 @@
                 Прогрессивный рок
                 <span class="check-icon"></span>
               </label>
-              <label
-                for="input6"
-                class="playlist__label"
-                tabindex="0"
-                type="button"
-              >
+              <label for="input6" class="playlist__label" tabindex="0">
                 <input
                   class="play-check"
                   data-id="electic-music"
@@ -3345,12 +3298,7 @@
                 Электронная музыка
                 <span class="check-icon"></span>
               </label>
-              <label
-                for="input7"
-                class="playlist__label"
-                tabindex="0"
-                type="button"
-              >
+              <label for="input7" class="playlist__label" tabindex="0">
                 <input
                   class="play-check"
                   data-id="classic-music"
@@ -3361,12 +3309,7 @@
                 Классическая музыка
                 <span class="check-icon"></span>
               </label>
-              <label
-                for="input8"
-                class="playlist__label"
-                tabindex="0"
-                type="button"
-              >
+              <label for="input8" class="playlist__label" tabindex="0">
                 <input
                   class="play-check"
                   data-id="nature-music"
@@ -4101,7 +4044,6 @@
               <label
                 for="checkbox"
                 class="about-us__form-checkbox flex"
-                type="button"
                 tabindex="0"
               >
                 <input
@@ -4130,7 +4072,7 @@
               class="footer__link-social link link-reset"
               aria-label="youtube"
               ><svg
-                class="link footer__link-svg"
+                class="footer__link-svg"
                 width="30"
                 height="24"
                 viewBox="0 0 30 24"
@@ -4147,7 +4089,7 @@
               class="footer__link-social link link-reset"
               aria-label="Одноклассники"
               ><svg
-                class="link footer__link-svg"
+                class="footer__link-svg"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -4169,7 +4111,7 @@
               class="footer__link-social link link-reset"
               aria-label="VK"
               ><svg
-                class="link footer__link-svg"
+                class="footer__link-svg"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -4228,130 +4170,130 @@
       </div>
     </footer>
 
+    <div class="overlay">
+      <div class="popup" id="popup" aria-label="окно авторизации">
+        <button class="popup__close" aria-label="Закрыть окно авторизации">
+          <svg
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="21"
+              cy="21"
+              r="19.5"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+            <path
+              d="M29.6777 12L12 29.6777M29.6777 29.6777L12 12"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+          </svg>
+        </button>
+
+        <h2 class="popup__title">Вход</h2>
+        <p class="popup__text popup__text-account">
+          Если у вас ещё нет аккаунта,<a
+            href="#"
+            class="popup__link link-reset"
+            aria-label="Зарегистрироваться"
+          >
+            зарегестрируйтесь</a
+          >
+        </p>
+        <form action="#" class="popup__form flex" id="popup__form">
+          <div class="popup__form-block">
+            <input
+              type="text"
+              id="account-name"
+              class="popup__input popup__form-name"
+              placeholder="Логин"
+              required="required"
+              aria-label="Введите имя"
+            />
+          </div>
+          <div class="popup__form-block">
+            <input
+              type="password"
+              id="account-password"
+              class="popup__input popup__form-password"
+              placeholder="Пароль"
+              required="required"
+              aria-label="Введите пароль"
+            />
+          </div>
+          <button class="popup__button-enter">Войти</button>
+        </form>
+        <p class="popup__text popup__autorization">Войти с помощью:</p>
+        <ul class="popup__list list-reset flex">
+          <li class="popup__list-item">
+            <a
+              href="javascript:void(0);"
+              class="popup__social"
+              aria-label="Facebook"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_24531_5189)">
+                  <path
+                    d="M26.3002 36.6667V23.7667H30.6205L31.2668 18.7519H26.3002V15.5519C26.3002 14.1 26.7039 13.1093 28.7853 13.1093H31.4409V8.62408C30.1553 8.48769 28.8633 8.42154 27.5705 8.42594C23.7428 8.42594 21.1224 10.763 21.1224 15.0556V18.7519H16.7928V23.7667H21.1224V36.6667H5.18535C4.69421 36.6667 4.22318 36.4716 3.87589 36.1243C3.5286 35.777 3.3335 35.306 3.3335 34.8148V5.1852C3.3335 4.69405 3.5286 4.22303 3.87589 3.87574C4.22318 3.52845 4.69421 3.33334 5.18535 3.33334H34.815C35.3061 3.33334 35.7771 3.52845 36.1244 3.87574C36.4717 4.22303 36.6668 4.69405 36.6668 5.1852V34.8148C36.6668 35.306 36.4717 35.777 36.1244 36.1243C35.7771 36.4716 35.3061 36.6667 34.815 36.6667H26.3002Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="popup__list-item">
+            <a href="javascript:void(0);" class="popup__social" aria-label="VK">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="3" y="3" width="33.33" height="33.33" rx="2" />
+                <path
+                  d="M20.7487 26.332H19.3854C19.3854 26.332 16.3772 26.5131 13.7277 23.7545C10.8383 20.7461 8.28686 14.7765 8.28686 14.7765C8.28686 14.7765 8.13973 14.3853 8.29964 14.1959C8.47938 13.9831 8.96857 13.9695 8.96857 13.9695L12.2278 13.9482C12.2278 13.9482 12.5349 13.9994 12.7547 14.1608C12.9359 14.294 13.0373 14.543 13.0373 14.543C13.0373 14.543 13.5641 15.8752 14.2617 17.0804C15.6233 19.4331 16.2575 19.9477 16.7198 19.6957C17.3934 19.3283 17.1914 16.3698 17.1914 16.3698C17.1914 16.3698 17.2037 15.296 16.8522 14.8177C16.58 14.4475 16.0667 14.3391 15.84 14.3089C15.6566 14.2844 15.9576 13.8587 16.3478 13.6676C16.9343 13.3803 17.9699 13.3641 19.1938 13.3765C20.1473 13.3863 20.4219 13.4458 20.7946 13.5357C21.6597 13.7446 21.6327 14.4138 21.5745 15.8578L21.5745 15.8579C21.5571 16.2893 21.537 16.7899 21.537 17.3681C21.537 17.4983 21.5332 17.6371 21.5293 17.7798V17.7799C21.509 18.5193 21.4858 19.3656 21.9726 19.6802C22.2223 19.8415 22.8331 19.7042 24.3603 17.111C25.084 15.8819 25.627 14.4368 25.627 14.4368C25.627 14.4368 25.7453 14.1791 25.9297 14.0688C26.1181 13.9561 26.3726 13.9907 26.3726 13.9907L29.8023 13.9695C29.8023 13.9695 30.8329 13.8466 30.9997 14.3118C31.1747 14.8001 30.6146 15.9402 29.2135 17.8077C27.8827 19.5813 27.236 20.2332 27.2968 20.8106C27.3401 21.2221 27.7429 21.5959 28.5137 22.311L28.5668 22.3603C30.2548 23.9272 30.7051 24.7501 30.8121 24.9456C30.8207 24.9615 30.8271 24.9732 30.8318 24.9809C31.5873 26.2337 29.9939 26.332 29.9939 26.332L26.9477 26.3746C26.9477 26.3746 26.2931 26.5041 25.4317 25.9125C24.9813 25.6033 24.5409 25.0985 24.1214 24.6174L24.1214 24.6174C23.4798 23.8818 22.8868 23.2019 22.3806 23.3624C21.5317 23.6319 21.5583 25.4613 21.5583 25.4613C21.5583 25.4613 21.5645 25.852 21.371 26.0601C21.1605 26.2866 20.7487 26.332 20.7487 26.332Z"
+                  fill="#121723"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="popup__list-item">
+            <a
+              href="javascript:void(0);"
+              class="popup__social"
+              aria-label="Google"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="3" y="3" width="33.33" height="33.33" rx="2" />
+                <path
+                  d="M23.9403 14.9923C23.1517 14.2694 21.7687 13.4043 19.7183 13.4043C16.8309 13.4043 14.3802 15.2649 13.4945 17.8364C13.2761 18.5001 13.1427 19.2111 13.1427 19.9459C13.1427 20.6806 13.2761 21.3917 13.5066 22.0553C14.3802 24.6269 16.8309 26.4874 19.7183 26.4874C21.344 26.4874 22.5815 26.0489 23.5036 25.4208C24.9595 24.4254 25.6146 22.9441 25.7359 21.9605H19.7183V18.0024H29.9701C30.1277 18.666 30.2006 19.3059 30.2006 20.1829C30.2006 23.4299 29.0116 26.1675 26.9491 28.028C25.1414 29.6634 22.6664 30.6115 19.7183 30.6115C15.4477 30.6115 11.7595 28.2176 9.96398 24.7335C9.22395 23.2877 8.79932 21.6642 8.79932 19.9459C8.79932 18.2275 9.22395 16.604 9.96398 15.1582C11.7595 11.6741 15.4477 9.28027 19.7183 9.28027C22.6664 9.28027 25.1293 10.335 27.0219 12.0533L23.9403 14.9923Z"
+                  fill="#121723"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="js/script.js"></script>
   </body>
-  <div class="overlay">
-    <div class="popup" id="popup" aria-label="окно авторизации">
-      <button class="popup__close" aria-label="Закрыть окно авторизации">
-        <svg
-          width="42"
-          height="42"
-          viewBox="0 0 42 42"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="21"
-            cy="21"
-            r="19.5"
-            stroke="currentColor"
-            stroke-width="3"
-          />
-          <path
-            d="M29.6777 12L12 29.6777M29.6777 29.6777L12 12"
-            stroke="currentColor"
-            stroke-width="3"
-          />
-        </svg>
-      </button>
-
-      <h2 class="popup__title">Вход</h2>
-      <p class="popup__text popup__text-account">
-        Если у вас ещё нет аккаунта,<a
-          href="#"
-          class="popup__link link-reset"
-          aria-label="Зарегистрироваться"
-        >
-          зарегестрируйтесь</a
-        >
-      </p>
-      <form action="#" class="popup__form flex" id="popup__form">
-        <div class="popup__form-block">
-          <input
-            type="text"
-            id="account-name"
-            class="popup__input popup__form-name"
-            placeholder="Логин"
-            required="required"
-            aria-label="Введите имя"
-          />
-        </div>
-        <div class="popup__form-block">
-          <input
-            type="password"
-            id="account-password"
-            class="popup__input popup__form-password"
-            placeholder="Пароль"
-            required="required"
-            aria-label="Введите пароль"
-          />
-        </div>
-        <button class="popup__button-enter">Войти</button>
-      </form>
-      <p class="popup__text popup__autorization">Войти с помощью:</p>
-      <ul class="popup__list list-reset flex">
-        <li class="popup__list-item">
-          <a
-            href="javascript:void(0);"
-            class="popup__social"
-            aria-label="Facebook"
-          >
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_24531_5189)">
-                <path
-                  d="M26.3002 36.6667V23.7667H30.6205L31.2668 18.7519H26.3002V15.5519C26.3002 14.1 26.7039 13.1093 28.7853 13.1093H31.4409V8.62408C30.1553 8.48769 28.8633 8.42154 27.5705 8.42594C23.7428 8.42594 21.1224 10.763 21.1224 15.0556V18.7519H16.7928V23.7667H21.1224V36.6667H5.18535C4.69421 36.6667 4.22318 36.4716 3.87589 36.1243C3.5286 35.777 3.3335 35.306 3.3335 34.8148V5.1852C3.3335 4.69405 3.5286 4.22303 3.87589 3.87574C4.22318 3.52845 4.69421 3.33334 5.18535 3.33334H34.815C35.3061 3.33334 35.7771 3.52845 36.1244 3.87574C36.4717 4.22303 36.6668 4.69405 36.6668 5.1852V34.8148C36.6668 35.306 36.4717 35.777 36.1244 36.1243C35.7771 36.4716 35.3061 36.6667 34.815 36.6667H26.3002Z"
-                />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li class="popup__list-item">
-          <a href="javascript:void(0);" class="popup__social" aria-label="VK">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect x="3" y="3" width="33.33" height="33.33" rx="2" />
-              <path
-                d="M20.7487 26.332H19.3854C19.3854 26.332 16.3772 26.5131 13.7277 23.7545C10.8383 20.7461 8.28686 14.7765 8.28686 14.7765C8.28686 14.7765 8.13973 14.3853 8.29964 14.1959C8.47938 13.9831 8.96857 13.9695 8.96857 13.9695L12.2278 13.9482C12.2278 13.9482 12.5349 13.9994 12.7547 14.1608C12.9359 14.294 13.0373 14.543 13.0373 14.543C13.0373 14.543 13.5641 15.8752 14.2617 17.0804C15.6233 19.4331 16.2575 19.9477 16.7198 19.6957C17.3934 19.3283 17.1914 16.3698 17.1914 16.3698C17.1914 16.3698 17.2037 15.296 16.8522 14.8177C16.58 14.4475 16.0667 14.3391 15.84 14.3089C15.6566 14.2844 15.9576 13.8587 16.3478 13.6676C16.9343 13.3803 17.9699 13.3641 19.1938 13.3765C20.1473 13.3863 20.4219 13.4458 20.7946 13.5357C21.6597 13.7446 21.6327 14.4138 21.5745 15.8578L21.5745 15.8579C21.5571 16.2893 21.537 16.7899 21.537 17.3681C21.537 17.4983 21.5332 17.6371 21.5293 17.7798V17.7799C21.509 18.5193 21.4858 19.3656 21.9726 19.6802C22.2223 19.8415 22.8331 19.7042 24.3603 17.111C25.084 15.8819 25.627 14.4368 25.627 14.4368C25.627 14.4368 25.7453 14.1791 25.9297 14.0688C26.1181 13.9561 26.3726 13.9907 26.3726 13.9907L29.8023 13.9695C29.8023 13.9695 30.8329 13.8466 30.9997 14.3118C31.1747 14.8001 30.6146 15.9402 29.2135 17.8077C27.8827 19.5813 27.236 20.2332 27.2968 20.8106C27.3401 21.2221 27.7429 21.5959 28.5137 22.311L28.5668 22.3603C30.2548 23.9272 30.7051 24.7501 30.8121 24.9456C30.8207 24.9615 30.8271 24.9732 30.8318 24.9809C31.5873 26.2337 29.9939 26.332 29.9939 26.332L26.9477 26.3746C26.9477 26.3746 26.2931 26.5041 25.4317 25.9125C24.9813 25.6033 24.5409 25.0985 24.1214 24.6174L24.1214 24.6174C23.4798 23.8818 22.8868 23.2019 22.3806 23.3624C21.5317 23.6319 21.5583 25.4613 21.5583 25.4613C21.5583 25.4613 21.5645 25.852 21.371 26.0601C21.1605 26.2866 20.7487 26.332 20.7487 26.332Z"
-                fill="#121723"
-              />
-            </svg>
-          </a>
-        </li>
-        <li class="popup__list-item">
-          <a
-            href="javascript:void(0);"
-            class="popup__social"
-            aria-label="Google"
-          >
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect x="3" y="3" width="33.33" height="33.33" rx="2" />
-              <path
-                d="M23.9403 14.9923C23.1517 14.2694 21.7687 13.4043 19.7183 13.4043C16.8309 13.4043 14.3802 15.2649 13.4945 17.8364C13.2761 18.5001 13.1427 19.2111 13.1427 19.9459C13.1427 20.6806 13.2761 21.3917 13.5066 22.0553C14.3802 24.6269 16.8309 26.4874 19.7183 26.4874C21.344 26.4874 22.5815 26.0489 23.5036 25.4208C24.9595 24.4254 25.6146 22.9441 25.7359 21.9605H19.7183V18.0024H29.9701C30.1277 18.666 30.2006 19.3059 30.2006 20.1829C30.2006 23.4299 29.0116 26.1675 26.9491 28.028C25.1414 29.6634 22.6664 30.6115 19.7183 30.6115C15.4477 30.6115 11.7595 28.2176 9.96398 24.7335C9.22395 23.2877 8.79932 21.6642 8.79932 19.9459C8.79932 18.2275 9.22395 16.604 9.96398 15.1582C11.7595 11.6741 15.4477 9.28027 19.7183 9.28027C22.6664 9.28027 25.1293 10.335 27.0219 12.0533L23.9403 14.9923Z"
-                fill="#121723"
-              />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </html>

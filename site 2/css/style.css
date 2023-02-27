@@ -136,6 +136,7 @@ body {
 }
 
 .burger-menu:focus-visible {
+  outline: none;
   color: var(--ligth-violet);
   background-color: transparent;
 }
@@ -301,7 +302,7 @@ body {
 }
 
 .header__block-button {
-  padding: 20px 0;
+  padding: 21px 0;
   align-items: center;
 }
 
@@ -332,11 +333,13 @@ body {
   position: absolute;
   right: 160px;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease-in-out;
 }
 
 .header__search--active {
   opacity: 1;
+  visibility: visible;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -806,7 +809,7 @@ body {
 }
 
 .podcast__block {
-  padding-top: 91px;
+  padding-top: 93px;
   padding-bottom: 93px;
 }
 
@@ -1048,14 +1051,14 @@ body {
 /* broadcast */
 
 .broadcast__block {
-  padding-top: 93px;
-  padding-bottom: 77px;
+  padding-top: 92px;
+  padding-bottom: 76px;
   grid-template-columns: 255px 1fr;
   gap: 30px;
 }
 
 .broadcast__select-block {
-  margin-bottom: 200px;
+  margin-bottom: 175px;
 }
 
 .broadcast__title {
@@ -1169,17 +1172,18 @@ body {
 
 .select-block__archive {
   display: flex;
-  padding-top: 110px;
+  padding-top: 120px;
   flex-direction: column;
   grid-column: 1;
   background-image: url("../img/microphone-broadcast.png");
   background-repeat: no-repeat;
-  background-position: left 0;
+  background-position: left top;
 }
 
 .select-block__archive-button {
   display: flex;
   padding: 8px 54px;
+  margin-bottom: 10px;
   max-width: 160px;
   align-items: center;
   justify-content: center;
@@ -1189,6 +1193,7 @@ body {
   border: 2px solid #121723;
   border-radius: 77px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .select-block__archive-button:focus-visible {
@@ -1206,6 +1211,7 @@ body {
 }
 
 .select-block__arcive-descr {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -1213,18 +1219,45 @@ body {
 }
 
 .broadcast__list {
-  padding-top: 15px;
+  padding-top: 14px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 260px);
   gap: 30px;
+  row-gap: 15px;
   grid-column: 2;
   grid-row: 1 / 2 span;
 }
 
 .broadcast__list-item {
   display: flex;
+}
+
+.broadcast__list-item-link {
+  display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
+  color: #121723;
+}
+
+.broadcast__list-item-link:hover .broadcast__img {
+  opacity: 0.7;
+}
+
+.broadcast__list-item-link:focus-visible {
+  outline: 1px solid var(--violet);
+  outline-offset: 7px;
+}
+
+.broadcast__list-item-link:focus-visible .broadcast__link {
+  background-color: var(--ligth-violet);
+  color: #fff;
+  outline: none;
+}
+
+.broadcast__list-item-link:hover .broadcast__link {
+  color: var(--violet);
+}
+
+.broadcast__list-item-link:active .broadcast__link {
+  color: var(--hard-violet);
 }
 
 .broadcast__img {
@@ -1234,11 +1267,12 @@ body {
 
 .broadcast__descr {
   display: flex;
+  padding: 0;
+  padding: 20px 16px;
+  padding-bottom: 32px;
   flex-direction: column;
   flex: 1 1 auto;
   margin: 0;
-  padding: 0;
-  padding: 20px 16px;
   background: #ffffff;
   outline: 1px solid var(--gray);
 }
@@ -1263,33 +1297,26 @@ body {
   color: var(--text-gray);
 }
 
-.broadcast__descr-link {
-  margin-top: auto;
-}
-
 .broadcast__link {
+  display: flex;
+  margin: 0;
+  margin-top: auto;
+  padding: 2px;
+  align-items: center;
+  white-space: nowrap;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  outline-offset: 2px;
   color: inherit;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     outline 0.3s ease-in-out;
 }
 
-.broadcast__link:focus-visible {
-  background-color: var(--ligth-violet);
-  color: #fff;
-  outline: none;
-}
+/* .broadcast__link:focus .broadcast__list-item:focus {
 
-.broadcast__link:hover {
-  color: var(--violet);
-}
-
-.broadcast__link:active {
-  color: var(--hard-violet);
-}
+} */
 
 /* guest */
 
@@ -1298,8 +1325,8 @@ body {
 }
 
 .guest__block {
-  padding-top: 93px;
-  padding-bottom: 92px;
+  padding-top: 95px;
+  padding-bottom: 96px;
 }
 
 .guest__title {
@@ -1550,7 +1577,7 @@ body {
 
 .playlist__block {
   padding-top: 80px;
-  padding-bottom: 92px;
+  padding-bottom: 97px;
   grid-template-columns: 350px 1fr;
   grid-template-rows: auto 1fr;
   column-gap: 30px;
@@ -1766,7 +1793,7 @@ body {
 
 .team {
   position: relative;
-  padding-top: 6px;
+  padding-top: 9px;
   grid-template-columns: repeat(4, minmax(160px, 1fr));
   gap: 30px;
   row-gap: 28px;

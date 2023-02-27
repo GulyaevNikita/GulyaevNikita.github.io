@@ -101,13 +101,21 @@
     margin-bottom: 26px;
   }
 
+  .select-block__archive {
+    padding-top: 113px;
+  }
+
+  .select-block__archive-button {
+    padding: 10px 54px;
+  }
+
   .podcast__img {
     width: inherit;
   }
 
   .broadcast__block {
     padding-top: 93px;
-    padding-bottom: 88px;
+    padding-bottom: 96px;
     grid-template-rows: 323px 1fr;
   }
 
@@ -120,6 +128,7 @@
   }
 
   .broadcast__list {
+    row-gap: 30px;
     padding-top: 18px;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -130,6 +139,7 @@
 
   .broadcast__descr {
     padding: 20px 16px;
+    padding-bottom: 15px;
   }
 
   .guest__block {
@@ -155,7 +165,7 @@
 
   .playlist__block {
     padding-top: 80px;
-    padding-bottom: 54px;
+    padding-bottom: 52px;
     grid-template-columns: 1fr;
     column-gap: 0;
     row-gap: 0;
@@ -217,7 +227,7 @@
 
   .brand-item__block {
     padding-top: 93px;
-    padding-bottom: 97px;
+    padding-bottom: 95px;
   }
 
   .brand-item__item {
@@ -233,13 +243,21 @@
     margin-bottom: 15px;
   }
 
+  .brand-item__content-descr:last-child {
+    margin-bottom: 34px;
+  }
+
   .brand-item__content-price {
     margin: 0;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
+  }
+
+  .brand-item__content-button {
+    padding: 22px 10px 22px 10px;
   }
 
   .about-us__block {
-    padding: 95px 20px;
+    padding: 93px 20px;
   }
 
   .about-us__text-block {
@@ -334,12 +352,17 @@
   }
 
   .header__logo-block--hiden {
-    padding: 29px 0 18px 0;
+    padding: 32px 0 18px 0;
   }
 
   .header__logo-container {
     max-width: 600px;
     padding: 0px 30px;
+  }
+
+  .header__block-button {
+    padding-top: 18px;
+    padding-bottom: 20px;
   }
 
   .header__search {
@@ -454,7 +477,7 @@
 
   .broadcast__block {
     padding-top: 91px;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
     grid-template-rows: auto 1fr auto;
   }
 
@@ -471,7 +494,7 @@
 
   .broadcast__list {
     padding-top: 17px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
     grid-column: 1 / 2 span;
     grid-row: 2;
     border-bottom: 1px solid #e6e8ec;
@@ -562,6 +585,7 @@
   }
 
   .team {
+    padding-top: 31px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -570,7 +594,7 @@
   }
 
   .brand-item__block {
-    padding-top: 44px;
+    padding-top: 41px;
     padding-bottom: 95px;
     gap: 0;
   }
@@ -584,6 +608,10 @@
     margin-top: -13px;
 
     grid-column: 1 / 12 span;
+  }
+
+  .brand-item__content-descr:last-child {
+    margin-bottom: 32px;
   }
 
   .about-us {
@@ -831,6 +859,10 @@
     top: 0;
   }
 
+  .header__nav-top {
+    height: 60vh;
+  }
+
   .burger_active {
     transform: translate(-5%, -100%);
   }
@@ -906,7 +938,7 @@
     display: block;
     left: 0;
     width: 100%;
-    height: 70vh;
+    height: 40vh;
     z-index: 1000;
     background-color: #fff;
     background-repeat: no-repeat, no-repeat;
@@ -927,11 +959,13 @@
     grid-template-rows: 16px 16px 16px;
     row-gap: 30px;
     column-gap: 48px;
+    overflow-y: auto;
     transition: all 0.3s ease-in-out;
   }
 
   .nav__list-down_active {
     visibility: visible;
+    bottom: 40%;
     transform: translateY(100%);
     transition: all 0.3s ease-in-out;
   }
@@ -956,6 +990,10 @@
     color: var(--violet);
     cursor: pointer;
     transition: color 0.3s ease-in-out;
+  }
+
+  .header__translation-mobile-button:focus-visible {
+    outline: none;
   }
 
   .header__ether-wrapper {
@@ -1180,16 +1218,16 @@
     top: 40%;
   }
 
-  .broadcast__list {
-    grid-template-rows: repeat(2, 149px);
-  }
-
   .broadcast__list-item {
     min-height: 149px;
   }
 
+  .broadcast__img {
+    max-height: 50px;
+  }
+
   .broadcast__descr {
-    padding: 10px 9px 12px 10px;
+    padding: 10px 9px 7px 10px;
   }
 
   .broadcast__descr-title {
@@ -1221,10 +1259,6 @@
   .broadcast__list {
     margin-bottom: 28px;
     padding-bottom: 30px;
-  }
-
-  .broadcast__img {
-    margin-bottom: -16px;
   }
 
   .select-block__archive {
@@ -1272,7 +1306,7 @@
   }
 
   .guest__block {
-    padding: 55px 30px;
+    padding: 56px 30px;
   }
 
   .guest__title {
@@ -1412,7 +1446,7 @@
 
   .playlist__block {
     padding-top: 41px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
     padding-right: 0;
 
     grid-template-columns: 1fr;
