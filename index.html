@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <body>
-    <ul class="site__list">
-      <li class="site__list-item">
-        <a href="/site 1/index.html">Евклид</a>
-      </li>
-      <li class="site__list-item">
-        <a href="/site 2/index.html">Сайт W-Wave радио</a>
-      </li>
-    </ul>
+    <div class="container portfolio">
+      <ul class="site__list flex list-reset">
+        <li class="site__list-item">
+          <button
+            class="button-reset site__button"
+            onclick="document.location='site1/index.html'"
+          >
+            Евклид
+          </button>
+        </li>
+        <li class="site__list-item">
+          <button
+            class="button-reset site__button"
+            onclick="document.location='site2/index.html'"
+          >
+            Сайт W-Wave радио
+          </button>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

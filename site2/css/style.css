@@ -14,10 +14,6 @@ textarea {
   font-family: inherit;
 }
 
-/* *:focus-visible {
-  outline: none;
-} */
-
 @font-face {
   font-family: "Muller";
   src: local("mullerregular"), url("../fonts/MullerRegular.woff") format("woff"),
@@ -73,6 +69,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #121723;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .list-reset {
@@ -1314,10 +1314,6 @@ body {
     outline 0.3s ease-in-out;
 }
 
-/* .broadcast__link:focus .broadcast__list-item:focus {
-
-} */
-
 /* guest */
 
 .guest {
@@ -1441,7 +1437,7 @@ body {
 }
 
 .open .svg-drop-down {
-  transform: rotate(180deg);
+  transform: rotateX(180deg);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -2013,7 +2009,7 @@ body {
 
 .brand-item__content-button:active {
   background-color: #bb973e;
-  border: #bb973e;
+  outline: 1px solid #bb973e;
 }
 
 .button-buy {
