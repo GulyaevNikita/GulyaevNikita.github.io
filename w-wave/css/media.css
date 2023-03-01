@@ -183,6 +183,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .team__list-item-play {
+    top: 27%;
+    left: 14%;
+  }
+
   .pagination {
     position: absolute;
   }
@@ -795,10 +800,6 @@
     font-size: 16px;
   }
 
-  /* .team__list-item {
-    grid-template-columns: 1fr;
-  } */
-
   .team__descr {
     grid-row: 1;
     grid-column: 2;
@@ -1293,6 +1294,11 @@
   .team__list-item {
     min-width: 112px;
     grid-template-columns: minmax(113px, 1fr);
+  }
+
+  .team__list-item-play {
+    top: 20%;
+    left: 30%;
   }
 
   .team__descr {
