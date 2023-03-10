@@ -3,7 +3,12 @@ html {
 }
 
 body {
-  background-color: black;
+  background: rgb(195, 34, 105);
+  background: linear-gradient(
+    100deg,
+    rgba(195, 34, 105, 1) 0%,
+    rgba(27, 13, 135, 1) 100%
+  );
   box-sizing: border-box;
 }
 
@@ -39,6 +44,11 @@ body {
 .site__list {
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.site__list-item {
+  margin-bottom: 20px;
 }
 
 .site__list-item:not(:last-child) {
@@ -47,8 +57,20 @@ body {
 
 .site__button {
   padding: 10px;
-  background-color: #c410be;
+  background: black;
+
   color: #fff;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.site__button:hover {
+  outline: 2px solid #c7c818;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(199, 200, 24, 1) 100%
+  );
+  scale: 1.05;
 }

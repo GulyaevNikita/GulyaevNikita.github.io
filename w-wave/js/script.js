@@ -100,6 +100,8 @@ play.forEach((item) => {
 
 // Плей в блоке с подкастами
 
+console.log('helo World')
+
 const itemPodcast = document.querySelector(".podcast__descr-button");
 const playPodcast = document.querySelectorAll(".js-play");
 
@@ -125,6 +127,8 @@ playPodcast.forEach((itemPodcast) => {
     }
   });
 });
+
+
 
 // Секция с трансляциями
 
