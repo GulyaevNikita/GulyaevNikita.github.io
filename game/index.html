@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игра в пары</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="screen">
+      <h1>Игра в пары</h1>
+      <a href="#" class="start" id="start">Начать игру</a>
+    </div>
+
+    <div class="screen">
+      <h3>Выберите время</h3>
+      <ul class="time-list" id="time-list">
+        <li>
+          <button class="time-btn" data-time="60">1 минута</button>
+          <button class="time-btn" data-time="120" data-count="12">
+            2 минуты
+          </button>
+          <button class="time-btn" data-time="180" data-count="16">
+            3 минуты
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen">
+      <h3>Осталось <span id="time"></span></h3>
+      <div class="board" id="board"></div>
+    </div>
+  </body>
+</html>

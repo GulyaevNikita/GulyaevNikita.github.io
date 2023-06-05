@@ -1,0 +1,39 @@
+@media all and (max-width: 500px) {
+  .modal__content {
+    max-width: 375px;
+  }
+
+  .modal__form {
+    width: 315px;
+  }
+
+  .contact {
+    width: 315px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .modal__content {
+    max-width: 250px;
+  }
+
+  .modal__form {
+    width: 200px;
+  }
+
+  .contact {
+    width: 200px;
+  }
+
+  .contact__name {
+    max-width: 105px;
+    min-width: 105px;
+  }
+  .contact__input {
+    padding-left: 7px;
+  }
+
+  .delete-modal__content {
+    min-width: 300px;
+  }
+}

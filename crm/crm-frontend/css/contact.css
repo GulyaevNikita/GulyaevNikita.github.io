@@ -1,0 +1,138 @@
+.contact {
+  display: flex;
+  align-items: center;
+  width: 390px;
+  margin-bottom: 25px;
+}
+
+.contact__type {
+  position: relative;
+}
+
+.contact__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px 12px;
+  height: 41px;
+  max-width: 134px;
+  min-width: 134px;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid var(--color-gray-suit);
+  background-color: var(--color-mischka);
+  color: var(--color-black);
+  transition: background-color 0.3 ease-in-out;
+}
+
+.contact__name:hover {
+  background-color: var(--color-gray-suit);
+  transition: background-color 0.3 ease-in-out;
+}
+
+.contact__name:active {
+  background-color: var(--color-mischka);
+  transition: background-color 0.3 ease-in-out;
+}
+
+.name__svg {
+  transform: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.name__svg--active {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact__list {
+  z-index: 2;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 0 6px;
+  width: 100%;
+  max-width: 132px;
+  min-width: 132px;
+  top: 40px;
+  left: 0;
+  background-color: var(--color-athens-gray);
+  border: 1px solid var(--color-gray-suit);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contact__list--active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.contact__item {
+  cursor: pointer;
+  padding-top: 4px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  transition: background-color 0.3 ease-in-out;
+}
+
+.contact__item:hover {
+  transition: background-color 0.3 ease-in-out;
+  background-color: var(--color-mischka);
+}
+
+.contact__input {
+  padding-left: 12px;
+  width: 100%;
+  height: 37px;
+  display: block;
+  border: 1px solid var(--color-gray-suit);
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+
+.contact__delete {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  align-self: stretch;
+  background-color: var(--color-mischka);
+  border: 1px solid var(--color-gray-suit);
+  transition: border-color 0.3s ease-in-out;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+.contact__delete svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: var(--color-silver-chelice);
+  transition: fill 0.3s ease-in-out;
+}
+
+.contact__delete:hover {
+  border-color: var(--color-barnt-sienna);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact__delete:hover svg {
+  fill: var(--color-barnt-sienna);
+  transition: fill 0.3s ease-in-out;
+}
+
+.contact__delete:hover .contact-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.contact__delete .contact-tooltip {
+  min-width: 150px;
+  top: -40px;
+}
