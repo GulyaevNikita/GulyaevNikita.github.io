@@ -1,0 +1,158 @@
+.clients__table {
+  width: 100%;
+  min-width: 1216px;
+}
+
+.clients__item {
+  display: flex;
+  padding: 18px;
+  border-bottom: 1px solid var(--color-gray-suit);
+  background-color: var(--color-white);
+}
+
+.clients__id {
+  max-width: 7%;
+  min-width: 7%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--color-silver-chalice);
+}
+
+.clients__fullname {
+  width: calc(25% + 5px);
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.clients__fullname span {
+  display: inline-block;
+}
+
+.clients__fullname span:not(:last-child) {
+  margin-right: 5px;
+}
+
+.clients__created {
+  width: calc(15%);
+}
+
+.clients__changed {
+  width: calc(15%);
+}
+
+.created__date,
+.changed__date {
+  margin-right: 7px;
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.created__time,
+.changed__time {
+  font-size: 14px;
+  color: var(--color-silver-chalice);
+}
+
+.clients__contacts {
+  margin: -10px 2px -17px 0;
+  max-width: 120px;
+  min-width: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.clients__actions {
+  display: flex;
+  align-items: center;
+}
+
+.clients__actions button {
+  display: inline-block;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: transparent;
+  padding-left: 20px;
+  color: var(--color-black);
+}
+
+.actions__edit {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  margin-right: 32px;
+  background-image: url("../img/edit-svg.svg");
+}
+
+.actions__delete {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  margin-right: 32px;
+  background-image: url("../img/delete-svg.svg");
+}
+
+.actions__edit:hover {
+  transition: color 0.3s ease-in-out;
+  color: var(--color-violets);
+}
+
+.actions__delete:hover {
+  transition: color 0.3s ease-in-out;
+  color: var(--color-barnt-sienna);
+}
+
+.contacts__link {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-bottom: 7px;
+}
+
+.contacts__link g,
+.contacts__link path {
+  transition: opacity 0.3s ease-in-out;
+}
+.contacts__link:hover g,
+.contacts__link:hover path {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contacts__link:not(:last-child) {
+  margin-right: 7px;
+}
+
+.action-wait {
+  background-image: none;
+}
+
+.actions__spinner {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spinner 0.3s ease-in-out;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.actions__edit .actions__spinner svg {
+  stroke: var(--color-violets);
+  fill: none;
+}
+
+.actions__delete .actions__spinner svg {
+  stroke: var(--color-barnt-sienna);
+  fill: none;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
