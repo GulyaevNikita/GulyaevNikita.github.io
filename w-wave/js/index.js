@@ -35,13 +35,23 @@ window.addEventListener("resize", function () {
 
 let burger = document.querySelector('.js-burger');
 let navigation = document.querySelector('.js-navigation');
+let links = document.querySelectorAll('.navigation__link');
 
 burger.addEventListener('click',
 function() {
     navigation.classList.toggle('active');
     document.body.classList.toggle('stop-scroll');
-}
-)
+
+});
+
+links.forEach(function(link) {
+  link.addEventListener('click', function() {
+    navigation.classList.remove('active');
+    document.body.classList.remove('stop-scroll');
+  });
+});
+
+
 
 
 // ПОПАП
