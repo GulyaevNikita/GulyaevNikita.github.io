@@ -129,10 +129,14 @@ label.forEach(item =>{
 
 
 let swiperAboutus = new Swiper('.js-about-us-swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+  direction: 'horizontal',
+  loop: true,
+
+  slidesPerView: 'auto',
+  slidesPerGroup: 1,
+
+  spaceBetween: 30,
+
 
     breakpoints: {
         320: {
@@ -145,10 +149,13 @@ let swiperAboutus = new Swiper('.js-about-us-swiper', {
             slidesPerView: 4,
             spaceBetween: 32,
         },
-    }
+    },
+
+    navigation: {
+      nextEl: '.about-us__swiper-button-next',
+      prevEl: '.about-us__swiper-button-prev',
+  },
   });
-
-
 
 // СЕЛЕКТ
 

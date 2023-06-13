@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   color: var(--dark);
   min-width: 320px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .stop-scroll {
@@ -2067,16 +2067,18 @@ body {
   position: relative;
 }
 
-.about-us__inner-swiper .swiper-button-next,
-.about-us__inner-swiper .swiper-button-prev {
+.about-us__inner-swiper .about-us__swiper-button-next,
+.about-us__inner-swiper .about-us__swiper-button-prev {
+  position: absolute;
   width: 40px;
   height: 40px;
   border: 2px solid var(--grey);
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.about-us__inner-swiper .swiper-button-next:after,
-.about-us__inner-swiper .swiper-button-prev:after {
+.about-us__inner-swiper .about-us__swiper-button-next:after,
+.about-us__inner-swiper .about-us__swiper-button-prev:after {
   content: "";
   background: url("../img/about-us-arrow.svg") no-repeat;
   width: 13px;
@@ -2087,20 +2089,20 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.about-us__inner-swiper .swiper-button-prev:after {
+.about-us__inner-swiper .about-us__swiper-button-prev:after {
   transform: translate(-50%, -50%) rotate(180deg);
 }
 
-.about-us__inner-swiper .swiper-button-next {
+.about-us__inner-swiper .about-us__swiper-button-next {
   right: -74px;
 }
 
-.about-us__inner-swiper .swiper-button-prev {
+.about-us__inner-swiper .about-us__swiper-button-prev {
   left: -78px;
 }
 
-.about-us__inner-swiper .swiper-button-next,
-.about-us__inner-swiper .swiper-button-prev {
+.about-us__inner-swiper .about-us__swiper-button-next,
+.about-us__inner-swiper .about-us__swiper-button-prev {
   top: 36%;
 }
 
