@@ -1,9 +1,7 @@
 ## <h1 align='center'>Здесь находятся мои проекты, выполненные в целях практики и демонстрации своих умений</h1>
 
 <h2 align='center'>
-1.<a href='' style='fonst-size="18px"'>
-crm-sistem
-</a>
+1. crm-sistem
 </h2>
 <p align='center'>
 Небольшая система для учета клиентов, написанная на чистом JavaScript с возможностью добавления, удаления и их редактирования. 
@@ -26,9 +24,7 @@ crm-sistem
 Простая игра, написанная с помощью JavaScript, html, css. Игра полностью функционирует и интуитивно понятна.
 </p>
 <h2 align='center'>
-4. <a href='https://gulyaevnikita.github.io/student-table/main.html' style='fonst-size="18px"'>
-student-table
-<a>
+4. student-table
 </h2>
 <p align='center'>
 Приложение для учета студентов в виде таблицы. Более простой аналог crm системы. Для стилизации использовался bootstrap
